@@ -15,7 +15,12 @@ $(document).ready(function() {
 	$('.ryu').mousedown(function() {
     	$('.ryu-ready').hide();
     	$('.ryu-throwing').show();
-    	$('.hadouken').show();
+    	$('.hadouken').finish().show().animate({"left":"1020px"},600,function(){
+    		playHadouken();
+    		$(this).hide();
+    		$(this).css("left","520px");
+    		
+    	});
     // play hadouken sound
     // show hadouken and animate it to the right of the screen
   	})
@@ -25,3 +30,9 @@ $(document).ready(function() {
     // ryu goes back to his ready position
  	});
 	});
+
+	function playHadouken () {
+		$('#hadouken-sound')[0].volume = 0.5;
+		$('#hadouken-sound')[0].load();
+		$('#hadouken-sound')[0].play();
+}
