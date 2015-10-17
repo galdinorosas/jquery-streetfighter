@@ -15,6 +15,48 @@ body{
   z-index: 1;
 }
 
+.intro-container{
+  margin-bottom:3em;
+  width: 300px;
+  height: 100px;
+  font-family: 'Bangers', cursive;
+}
+
+.intro-message,.personal-intro{
+  text-align: center;
+  position:relative;
+  color: #F03302;
+  z-index: 100;
+  left:700px;
+  top:275px;
+  font-size:2em;
+  display: none;
+}
+
+.intro-container>.personal-intro{
+  top:250px;
+}
+
+.jquery-logo{
+  position: relative;
+  width: 300px;
+  left:530px;
+  top:370px;
+  z-index: 1000;
+  display: none;
+}
+
+.thinkful-logo{
+  position: relative;
+  width: 200px;
+  left:880px;
+  top:230px;
+  z-index: 1000;
+  display: none;
+}
+
+
+
 .ryu{
 
 	float:left;

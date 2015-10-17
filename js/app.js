@@ -1,5 +1,15 @@
 $(document).ready(function() {
 
+	$('.jquery-logo, .thinkful-logo, .intro-message ').fadeIn(1000).delay(3000).fadeOut(1000);
+	console.log('hola');
+	
+
+	$('.personal-intro').fadeIn(1000).delay(3000).fadeOut(1000,function(){
+
+		console.log('hello');
+
+	});
+
 	$('.ryu').mouseenter(function(){
 	
 		$('.ryu-still').hide();
@@ -40,7 +50,7 @@ $(document).ready(function() {
 
 		if(e.keyCode==72){
 			$('.ryu-still').hide();
-+			$('.ryu-ready').hide();
+			$('.ryu-ready').hide();
 			$('.ryu-cool').show();
 		
 
@@ -58,6 +68,8 @@ $(document).ready(function() {
 
 		}
 	});
+
+
 
 
 
