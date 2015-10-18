@@ -16,53 +16,50 @@ body{
 }
 
 .intro-container{
-  margin-bottom:3em;
-  width: 300px;
-  height: 100px;
+  display: inline-block;
+  width: 541px;
+  height: 500px;
   font-family: 'Bangers', cursive;
+
+}
+
+.intro-container > .intro-message{
+
+  padding-top:50px;
 }
 
 .intro-message,.personal-intro{
   text-align: center;
-  position:relative;
   color: #F03302;
-  z-index: 100;
-  left:700px;
-  top:275px;
   font-size:2em;
+  position: relative;
+  right: 100px;
   display: none;
+  
 }
 
-.intro-container>.personal-intro{
-  top:250px;
+
+.jquery-logo, .thinkful-logo{
+  padding-top: 30px;
+  position: relative;
+  right: 100px;
+  display: none;
 }
 
 .jquery-logo{
-  position: relative;
   width: 300px;
-  left:530px;
-  top:370px;
-  z-index: 1000;
-  display: none;
+  padding-bottom: 50px;
 }
 
 .thinkful-logo{
-  position: relative;
   width: 200px;
-  left:880px;
-  top:230px;
-  z-index: 1000;
-  display: none;
+
+
 }
 
-
-
-.ryu{
-
-	float:left;
-}
 
 .ryu {
+    float:left;
     width: 659px;
     height: 494px;
 }
