@@ -33,14 +33,14 @@ body{
   text-align: center;
   color: #F03302;
   position: relative;
-  right: 100px;
+  right: 250px;
   display: none;
   
 }
 
 .TBC{
   top:150px;
-  right: 310px;
+  right: 460px;
   position: absolute;
   font-size: 3em;
   z-index: 1000;
@@ -49,7 +49,7 @@ body{
 }
 
 .ken{
-  left:900px;
+  right: 200px;
   padding-top:25px;
   position: absolute;
   width:280px;
@@ -69,7 +69,7 @@ body{
 .jquery-logo, .thinkful-logo{
   padding-top: 30px;
   position: relative;
-  right: 100px;
+  right: 250px;
   display: none;
 }
 
@@ -86,6 +86,8 @@ body{
 
 
 .ryu {
+  position: relative;
+  right: 200px;
     float:left;
     width: 659px;
     height: 494px;

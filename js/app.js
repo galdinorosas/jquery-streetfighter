@@ -1,5 +1,15 @@
 $(document).ready(function() {
 
+	function playRyuStage(){
+
+		$('#ryu-stage')[0].volume = 0.5;
+		$('#ryu-stage')[0].load();
+		$('#ryu-stage')[0].play();
+
+	};
+
+	playRyuStage();
+
 	$('.jquery-logo, .thinkful-logo, .intro-message ').fadeIn(2000).delay(2000).fadeOut(2000);
 
 	$('.personal-intro').fadeIn(2000).delay(2000).fadeOut(2000,function(){
@@ -93,7 +103,7 @@ $(document).ready(function() {
 		if(e.keyCode==88){
 			
 			$('.intro-instructions').css("display","none");
-
+			$('#ryu-stage')[0].pause();
 			playKen();
 
 			$('.ken').delay(5000).fadeIn(2000,function(){
