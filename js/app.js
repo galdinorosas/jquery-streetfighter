@@ -1,12 +1,10 @@
 $(document).ready(function() {
 
-	$('.jquery-logo, .thinkful-logo, .intro-message ').fadeIn(1000).delay(3000).fadeOut(1000);
-	console.log('hola');
-	
+	$('.jquery-logo, .thinkful-logo, .intro-message ').fadeIn(2000).delay(2000).fadeOut(2000);
 
-	$('.personal-intro').fadeIn(1000).delay(3000).fadeOut(1000,function(){
+	$('.personal-intro').fadeIn(2000).delay(2000).fadeOut(2000,function(){
 
-		console.log('hello');
+		$('.intro-instructions').fadeIn(1000);
 
 	});
 
@@ -40,15 +38,36 @@ $(document).ready(function() {
     // ryu goes back to his ready position
  	});
 
+ 	function playRyu(){
+
+		$('#ryu-pose')[0].volume=0.5;
+		$('#ryu-pose')[0].load();
+		$('#ryu-pose')[0].play();
+
+	};
+
 	function playHadouken () {
 		$('#hadouken-sound')[0].volume = 0.5;
 		$('#hadouken-sound')[0].load();
 		$('#hadouken-sound')[0].play();
 		};
 
+	function playKen(){
+
+		$('#ken-sound')[0].volume=0.5;
+		$('#ken-sound')[0].load();
+		$('#ken-sound')[0].play();
+
+	};
+
+	
+
 	$(window).keydown(function(e){
 
 		if(e.keyCode==72){
+
+			
+
 			$('.ryu-still').hide();
 			$('.ryu-ready').hide();
 			$('.ryu-cool').show();
@@ -65,6 +84,23 @@ $(document).ready(function() {
 			$('.ryu-still').show();
 
 
+
+		}
+	});
+
+	$(window).keydown(function(e){
+
+		if(e.keyCode==88){
+			
+			$('.intro-instructions').css("display","none");
+
+			playKen();
+
+			$('.ken').delay(5000).fadeIn(2000,function(){
+
+				$('.TBC').fadeIn(1000);
+
+			});
 
 		}
 	});
