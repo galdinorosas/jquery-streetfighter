@@ -67,16 +67,6 @@ $(document).ready(function() {
         $('#ken-sound')[0].play();
     };
 
-    $(window).keydown(function(e) {
-
-        if (e.keyCode == 72) {
-            $('.ryu-still').hide();
-            $('.ryu-ready').hide();
-            $('.ryu-cool').show();
-        }
-
-    });
-
     $(window).keyup(function(e) {
         if (e.keyCode == 72) {
             $('.ryu-cool').hide();
@@ -86,7 +76,11 @@ $(document).ready(function() {
     });
 
     $(window).keydown(function(e) {
-        if (e.keyCode == 88) {
+        if (e.keyCode == 72) {
+            $('.ryu-still').hide();
+            $('.ryu-ready').hide();
+            $('.ryu-cool').show();
+        } else if (e.keyCode == 88) {
             $('.intro-instructions').css("display", "none");
             $('#ryu-stage')[0].pause();
             playKen();
